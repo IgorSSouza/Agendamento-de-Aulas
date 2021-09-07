@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+<body>
+
+<header>
+    <h1>Agendamento de Aulas</h1>
+</header>    
+
+<main>
+    <div class="title">
+        <h1>Aulas</h1>
+        <span>Lista de aulas agendadas</span>
+    </div> 
+    
+    <div class="card">
+        <div class="lineInput">
+            <label>Aula:</label>
+            <input type="text" id="class" placeholder="Nome da Aula...">
+        </div>
+
+        <div class="lineInput">
+            <label>Professor:</label>
+            <input type="text" id="prof" placeholder="Nome do Professor...">
+        </div>
+        <div class="btn">
+            <button class="add" onclick="aula.salvar()">Salvar</button>
+            <button class="del" onclick="aula.cancelar()">Cancelar</button>
+        </div>  
+    </div>
+    
+    <div class="content">
+        <table class="table table-bordered">
+            <thead >
+                <th class="center">ID</th>
+                <th>Aula</th>
+                <th>Professor</th>
+                <th class="center">Ações</th>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr>
+                    <td class="center">1</td>
+                    <td>Banco de Dados I</td>
+                    <td>Vassouler</td>
+                    <td class="center">
+                        <img src="./editar-arquivo.png" alt="">
+                        <img src="./bin.png" alt="">
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    
+</main>    
+    
+    
+    
+
+<script src="./script/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>

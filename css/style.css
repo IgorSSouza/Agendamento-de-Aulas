@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header h1{
+    background-color: rgb(0, 44, 138);
+    padding: 5px;
+    text-align: center;
+    color: #fff;   
+}
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px 50px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.lineInput{
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+}
+
+.btn .add{
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: rgb(87, 173, 0);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s background-color;
+}
+
+.btn .del{
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: rgb(180, 9, 9);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s background-color;
+}
+
+.add:hover{
+    background-color:rgb(52, 104, 0); ;
+}
+
+.del:hover{
+    background-color: rgb(112, 3, 3);
+}
+
+.content{
+    margin-top: 15px;
+}
+
+.table thead{
+    background-color: #ccc;
+}
+
+.table td img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.table th{
+    padding: 1px;
+}
+
+.center{
+    text-align: center;
+}
